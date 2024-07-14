@@ -1,0 +1,5 @@
+*.db
+testfiles
+simple-gin-rest
+.git
+.bak

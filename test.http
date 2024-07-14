@@ -1,0 +1,30 @@
+### Create an Asset
+POST http://localhost:8080/assets
+Content-Type: application/json
+
+{
+  "name": "Chair",
+  "type": "Furniture",
+  "value": 1000.5,
+  "acquisition_date": null
+}
+
+### Get All Assets (with pagination)
+GET http://localhost:8080/assets?page=1&limit=10
+
+### Get a Single Asset by ID
+GET http://localhost:8080/assets/1
+
+### Update an Asset
+PUT http://localhost:8080/assets/2
+Content-Type: application/json
+
+{
+  "name": "Updated Chair",
+  "type": "Furniture",
+  "value": 1100.0,
+  "acquisition_date": "2024-07-14"
+}
+
+### Delete an Asset
+DELETE http://localhost:8080/assets/1
