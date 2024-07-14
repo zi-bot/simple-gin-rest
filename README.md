@@ -117,6 +117,41 @@ Connection: close
   }
 }
 ```
+### Detail Assets
+```http
+GET /assets/:id
+```
+Returns asset with specific id.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `id` (Required) | `int` | Asset Id|
+
+#### Request:
+
+```http
+GET http://localhost:8080/assets/1
+```
+#### Response:
+
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Sun, 14 Jul 2024 09:21:15 GMT
+Content-Length: 901
+Connection: close
+{
+  "data": 
+    {
+      "id": 1,
+      "name": "Chair",
+      "type": "Furniture",
+      "acquisition_date": null
+    }
+}
+```
 ### Create Asset
 ```http
 POST /assets
