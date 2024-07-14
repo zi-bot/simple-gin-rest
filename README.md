@@ -47,6 +47,7 @@ make docker-run
 ```bash
 make test
 ```
+##### You can also hit endpoint directly with file [test.http](../simple-gin-rest/test.http)
 
 ## API Endpoints
 
